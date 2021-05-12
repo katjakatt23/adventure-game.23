@@ -23,13 +23,13 @@ print()
 
 # Start Variables
 
-dj = 0
+d = 0
 
 h = 100
 print("Your starting Health is ", h)
 
-xp = 0
-print("Your starting XP is ", xp)
+x = 0
+print("Your starting XP is ", x)
 
 c = 50
 print("Your starting Cash is ", c)
@@ -50,15 +50,15 @@ print("Do you:")
 print("A) Try to Befriend it?")
 print("B) Run and hide?")
 print("C) Try to fight it?")
-a1 = input("Answer here:")
+aa = input("Answer here:")
 
-if a1 == ("a" or "A" or " a" or " A"):
+if aa == ("a" or "A" or " a" or " A"):
     print()
     print("The ogre roars with laughter, and lets you run away unharmed")
     print()
     print("Note that ogres do not befriend anyone")
 
-if a1 == ("b" or "B" or " b" or " B"):
+if aa == ("b" or "B" or " b" or " B"):
     h = h - random.randint(10, 20)
 
     print()
@@ -67,7 +67,7 @@ if a1 == ("b" or "B" or " b" or " B"):
     print()
     print("Current health:", h)
 
-if a1 == ("c" or "C" or " c" or " C"):
+if aa == ("c" or "C" or " c" or " C"):
     h = h - random.randint(50, 75)
 
     print()
@@ -92,13 +92,13 @@ print("Anyway, you see a small bird to the side of the path! What do you do?")
 print("A) Step on it for no reason(MWAHAHAHAHA!)")
 print("B) Reach up and help it into it's nest ")
 print("C) Ignore it ")
-a2 = input("Answer here:")
+ab = input("Answer here:")
 
-if a2 == ("a" or "A" or " a" or " A"):
+if ab == ("a" or "A" or " a" or " A"):
     k = k - 20
     c = c - 5
     h = h - 10
-    dj = dj + 5
+    d = d + 5
 
     print("You are a lemming. I, as Game Master, now dislike you, and smite you for my own amusement.")
     print()
@@ -114,11 +114,11 @@ if a2 == ("a" or "A" or " a" or " A"):
     input("")
 
     print("YOU HAVE A NEW STAT!")
-    print("Developer Judgement:", dj)
+    print("Developer Judgement:", d)
     print("This affects nothing in the game, it just amuses me. You may earn my respect back.")
     input("")
 
-if a2 == ("b" or "B" or " b" or " B"):
+if ab == ("b" or "B" or " b" or " B"):
     c = c + 10
     h = h - 5
 
@@ -129,15 +129,15 @@ if a2 == ("b" or "B" or " b" or " B"):
     print("Your cash is now:", c)
     print("Your health is now:", h)
 
-if a2 == ("c" or "C" or " c" or " C"):
-    dj = dj + 1
+if ab == ("c" or "C" or " c" or " C"):
+    d = d + 1
 
     print("-_- You are playing an adventure game you uncooked mushroom. Know that I am judging you.")
     print()
     input("")
 
     print("YOU HAVE A NEW STAT!")
-    print("Developer Judgement:", dj)
+    print("Developer Judgement:", d)
     print("This affects nothing in the game, it just amuses me. You may earn my respect back.")
     input("")
 
@@ -145,7 +145,7 @@ print()
 
 # Forest Path
 
-if a2 == ("a" or "A" or " a" or " A"):
+if ab == ("a" or "A" or " a" or " A"):
     print("After brutally murdering a defenceless baby bird and making the developer of the game you are playing hate "
           "you, you decide to walk on.")
     print("You immediately trip over a stone.")
@@ -158,9 +158,9 @@ if a2 == ("a" or "A" or " a" or " A"):
     print("B) trust that the Developer won't be petty")
     print("C) try to regain balance")
     print()
-    z=input("Answer here:")
+    ac = input("Answer here:")
 
-    if z == ("a" or "A" or " a" or " A"):
+    if ac == ("a" or "A" or " a" or " A"):
         c = c - 1
         h = h - 1
 
@@ -173,9 +173,9 @@ if a2 == ("a" or "A" or " a" or " A"):
         print("Current health:", h)
         print("Current cash:", c)
 
-    if z == ("b" or "B" or " b" or " B"):
+    if ac == ("b" or "B" or " b" or " B"):
         h = h - 5
-        dj = dj + 1
+        d = d + 1
         c = c - 5
 
         print("You utter buffoon. You have learned nothing of the Game God.")
@@ -186,9 +186,9 @@ if a2 == ("a" or "A" or " a" or " A"):
 
         print("Current health:", h)
         print("Current cash:", c)
-        print("Amount I am judging you:", dj)
+        print("Amount I am judging you:", d)
 
-    if z == ("c" or "C" or " c" or " C"):
+    if ac == ("c" or "C" or " c" or " C"):
         c = c - 5
 
         print("You hilariously overestimate your abilities so early on in the game. You do not regain balance, "
@@ -199,7 +199,7 @@ if a2 == ("a" or "A" or " a" or " A"):
 
     print()
 
-if a2 == ("b" or "B" or " b" or " B"):
+if ab == ("b" or "B" or " b" or " B"):
     print()
 
     c = c + 5
@@ -209,7 +209,7 @@ if a2 == ("b" or "B" or " b" or " B"):
     print()
 
 print("You continue on, leaves crunching underfoot. You check carefully for traps, as pixie numbers are strong here. "
-      "Up ahead, you see three paths. One leads to the castle, one leads to the sea, and one  leads further into the "
+      "Up ahead, you see three paths. One leads to the castle, one leads to the sea, and one leads further into the "
       "forest.")
 print("I know full well this is far too generic, but I am thirteen years old and coding a thing. Back off.")
 print()
@@ -224,10 +224,12 @@ print("B) The sea")
 print("C) The forest, further")
 print()
 
-a3 = input("Answer here:")
+ad = input("Answer here:")
 print()
 
-if a3 == ("a" or "A" or " a" or " A"):
+# Castle
+
+if ad == ("a" or "A" or " a" or " A"):
 
     print("You walk towards the castle, probably endeavouring to rob it within an inch of it's inanimateness")
     print("I may permit this, but know that the royals are well into spy novels.")
@@ -248,10 +250,10 @@ if a3 == ("a" or "A" or " a" or " A"):
     print("C) Try to kill the guard")
     print()
 
-    aa1 = input("Answer here:")
+    ae = input("Answer here:")
     print()
 
-    if aa1 == ("a" or "A" or " a" or " A"):
+    if ae == ("a" or "A" or " a" or " A"):
         print("The guard flushes uncomfortably. 'I am so sorry, I'm actually a heterosexual...'")
         print()
         print("Note: Due to the multitude of genders, sexes and species in the dating pool in this world, straights "
@@ -259,15 +261,83 @@ if a3 == ("a" or "A" or " a" or " A"):
         print()
         print("'... so I'm not interested. Really sorry.' In the awkward tangle, they neglect your papers. You are "
               "through!")
+        input("")
+
+        print("Once inside, you come across three rooms in your immediate line of vision.")
+        print("What do you do?")
+        print("A) The throne room (get looting over and done with)")
+        print("B) Staff room (potential for disguise)")
+        print("C) Cellars (secret treasures?)")
+
+        af = input("Answer here: ")
         print()
 
-    if aa1 == ("b" or "B" or " b" or " B"):
-        print("")
+        if af == ("a" or "A" or " a" or " A"):
+
+            print("You burst into the throne room, at which point you are met with an awful sight.")
+            print("To you.")
+            input("")
+            print("The ruler is sitting there, coated in jewels and a veritable Taj Mahal balanced on their head.")
+            input("")
+            print("You try and retreat, but they have spotted you and begin to open their mouth, their lips painted "
+                  "with expensive purple dye.")
+            print("'How dare you burst into my throne room, and stand before me in those tattered rags, you "
+                  "filthy", s, "!'")
+            print("You stammer over a lie, but before you can utter the first word of your improvised story, "
+                  "you are thrown from the castle by two boorish trolls with serious underbites.")
+            input("")
+
+            ag=input("You must find another way in (A), or you could give up and turn your efforts elsewhere (B)."
+                  " What's it gonna be?: ")
+
+            if ag == ("a" or "A" or " a" or " A"):
+                print("You decide to *hem* lay siege to the castle. You can't get through via guard, so you must "
+                      "climb through a high and tiny window.")
+                input("")
+
+                print("How to get there? If only there was a multiple choice for this kind of thing... ")
+                input("")
+                print("oh wait!")
+                input("")
+
+                print("A) Grappling hook"
+                      "B) Manually"
+                      "C) I give up.")
+
+                ah=input("Answer here: ")
+
+                if ah == ("a" or "A" or " a" or " A"):
+                    print()
+                    print("This option was here to give you false hope. You're going up with hands mate.")
+
+                if (ah == ("b" or "B" or " b" or " B")) or (ah == ("a" or "A" or " a" or " A")):
+
+                    print("You are going to ascend to the top of the tower on the off chance you can fit through a "
+                          "small window.")
+                    input("")
+                    print("Brave.")
+
+            if ((ag == ("a" or "A" or " a" or " A")) or (ah == ("c" or "C" or " c" or " C"))):
+                d=d+1
+                print("Wimp. 'Just give up as soon as things get rough', you thought, ''snot like anyone's watching', "
+                      "you thought.")
+                input("")
+                print("I'm watching.")
+                input("")
+                print("Amount I am  judging you:", d)
+
+    if ae == ("b" or "B" or " b" or " B"):
+        print("'...and that's why you should abandon your post and help me rob them!'")
+        print("The Serpentooth nods slowly.")
+        print("'You're right. I have been here for 10 years and have yet to get a promotion. I stand here, all day, "
+              "every day, minimum wage, which I can't even live off, and I don't even get extra when there's acid "
+              "rain! They even charge me when I use their plasters! Cheeky buggers. I'll march you in.'")
+        print("You are through!")
 
 
 # Game Rules
 
-if h > 20:
+if (h > 20):
     print()
     print("Your health is far too low! You must buy health potions!")
     print()
@@ -299,9 +369,9 @@ if h > 20:
         print("Your health is now", h)
         print("Your cash is now", c)
 
-if h <= 0:
+if (h <= 0):
     if k == 0:
-        dj = dj + 100
+        d = d + 100
         print("You had a neutral game life, and are going to a beige house to eat raw mushrooms in the afterlife.")
 
     if k > 0:
@@ -314,6 +384,7 @@ if h <= 0:
             "You had a negative game life, and I'm not even going to describe game hell because you will puke. Trust "
             "me, I thought it up.")
 
-    print(
-        "You may have noticed how funny I am. Why not go back and try different combinations to experience more of my "
-        "humour?")
+print("You may have noticed how funny I am. Why not go back and try different combinations to experience more of my "
+      "humour?")
+
+print("Soz, haven't coded anymore, check back in I've got some good ideas")
