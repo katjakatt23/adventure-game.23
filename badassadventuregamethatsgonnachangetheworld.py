@@ -315,7 +315,15 @@ if ad == ("a" or "A" or " a" or " A"):
                     print("You are going to ascend to the top of the tower on the off chance you can fit through a "
                           "small window.")
                     input("")
-                    print("Brave.")
+                    print("Only hands")
+                    input("")
+                    print("Brave. (For a ", s, ")")
+                    input("")
+                    
+                    
+                    
+                                      
+                    
 
             if ((ag == ("a" or "A" or " a" or " A")) or (ah == ("c" or "C" or " c" or " C"))):
                 d=d+1
